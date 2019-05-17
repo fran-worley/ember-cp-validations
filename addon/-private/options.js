@@ -18,6 +18,6 @@ export default class Options {
     const optionKeys = keys(options);
     const createParams = { [OPTION_KEYS]: optionKeys, model, attribute };
 
-    return OptionsObject.create(createParams, options);
+    return OptionsObject.extend(options).create(createParams);
   }
 }
